@@ -130,7 +130,7 @@ class DateLine extends Ui.Drawable {
 	function drawSingleLine(dc, day) {
 		var dateString = Lang.format("$1$ $2$ $3$", [mDayOfWeekString, day, mMonthString]);
 		var length = dc.getTextWidthInPixels(dateString, mFont);
-		var x = (dc.getWidth() / 2) - (length / 2);
+		var x = (dc.getWidth() / 2) - (length / 2)+30;
 		
 		// Draw day of week.
 		dc.setColor(gMonoDarkColour, Graphics.COLOR_TRANSPARENT);

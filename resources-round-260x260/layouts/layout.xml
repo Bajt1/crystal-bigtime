@@ -40,24 +40,24 @@
 	</drawable>
 
 	<drawable id="Indicators" class="Indicators">
-		<param name="locX">32</param>
-		<param name="locY">130</param>
-		<param name="spacingY">32</param>
+		<param name="locX">58</param>
+		<param name="locY">75</param>
+		<param name="spacingY">30</param>
 		<param name="batteryWidth">24</param>
 	</drawable>
 
 	<drawable id="Time" class="ThickThinTime">
-        <param name="adjustY">-5</param>
+        <param name="adjustY">0</param>
 		<param name="secondsX">182</param>
-		<param name="secondsY">158</param>
-		<param name="secondsClipY">170</param>
+		<param name="secondsY">168</param>
+		<param name="secondsClipY">190</param>
 		<param name="secondsClipWidth">29</param>
 		<param name="secondsClipHeight">19</param>
 	</drawable>
 
 	<drawable id="MoveBar" class="MoveBar">
 		<param name="x">52</param>
-		<param name="y">179</param>
+		<param name="y">190</param>
 		<param name="width">123</param>
 		<param name="height">11</param>
 		<param name="separator">3</param>

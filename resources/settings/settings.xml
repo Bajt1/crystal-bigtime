@@ -255,29 +255,7 @@
 			<listEntry value="1">@Strings.FilledSegments</listEntry>
 			<listEntry value="2">@Strings.RecoveryTime</listEntry>
 			<listEntry value="3">@Strings.Hidden</listEntry>
+			<listEntry value="4">@Strings.ActiveMinutes</listEntry>
 		</settingConfig>
-	</setting>
-
-	<setting propertyKey="@Properties.TeslaLink" title="@Strings.TeslaLink">
-		<settingConfig type="boolean"/>
-	</setting>
-
-	<setting propertyKey="@Properties.TeslaVehicleIndex" title="@Strings.TeslaVehicleIndex">
-		<settingConfig type="numeric" min="1" max="16" required="true"/>
-	</setting>
-
-	<setting propertyKey="@Properties.TeslaAccessToken" title="@Strings.TeslaAccessToken">
-		<settingConfig type="alphaNumeric" maxLength="2048"/>
-	</setting>
-
-	<setting propertyKey="@Properties.TeslaRefreshToken" title="@Strings.TeslaRefreshToken">
-		<settingConfig type="alphaNumeric" maxLength="2048"/>
-	</setting>
-	<setting propertyKey="@Properties.TeslaServerAPILocation" title="@Strings.Tesla_api_server_location_label" prompt="@Strings.Tesla_server_location_prompt">
-		<settingConfig type="alphaNumeric" />
-	</setting>
-
-	<setting propertyKey="@Properties.TeslaServerAUTHLocation" title="@Strings.Tesla_auth_server_location_label" prompt="@Strings.Tesla_server_location_prompt">
-		<settingConfig type="alphaNumeric" />
 	</setting>
 </settings>

@@ -62,24 +62,6 @@ class Indicators extends Ui.Drawable {
 			}
 		}
 
-//****************************************************************
-//******** REMVOVED THIS SECTION IF TESLA CODE NOT WANTED ********
-//****************************************************************
-		indicator = findIndicator(6); // INDICATOR_TYPE_TESLA
-		if (indicator != null) {
-			//DEBUG*/ logMessage("onSettingsChanged:Doing Tesla!");
-			Storage.setValue("Tesla", true);
-			if (App.getApp().getView().useComplications()) {
-				$.updateComplications("Tesla-Link", "Complication_I", indicator, Complications.COMPLICATION_TYPE_INVALID);
-				filled[indicator - 1] = true;
-			}
-		} else {
-			Storage.deleteValue("Tesla");
-		}
-//****************************************************************
-//******************** END OF REMVOVED SECTION *******************
-//****************************************************************
-
 		for (var i = 1; i < 4; i++) {
 			if (filled[i - 1] == false) {
 				Storage.deleteValue("Complication_I" + i);
@@ -149,15 +131,15 @@ class Indicators extends Ui.Drawable {
 		}*/
 
 		if (indicatorCount == 3) {
-			drawIndicator(dc, mIndicator1Type, locX, locY - mSpacing);
+			drawIndicator(dc, mIndicator1Type, locX - mSpacing, locY);
 			drawIndicator(dc, mIndicator2Type, locX, locY);
-			drawIndicator(dc, mIndicator3Type, locX, locY + mSpacing);
+			drawIndicator(dc, mIndicator3Type, locX + mSpacing, locY);
 			// dc.drawRectangle(xlocX, ylocY - spacingY, spacingX, spacingY);
 			// dc.drawRectangle(xlocX, ylocY, spacingX, spacingY);
 			// dc.drawRectangle(xlocX, ylocY + spacingY, spacingX, spacingY);
 		} else if (indicatorCount == 2) {
-			drawIndicator(dc, mIndicator1Type, locX, locY - (mSpacing / 2));
-			drawIndicator(dc, mIndicator2Type, locX, locY + (mSpacing / 2));
+			drawIndicator(dc, mIndicator1Type, locX - (mSpacing / 2), locY);
+			drawIndicator(dc, mIndicator2Type, locX + (mSpacing / 2), locY);
 			// dc.drawRectangle(xlocX, ylocY - spacingY / 2, spacingX, spacingY);
 			// dc.drawRectangle(xlocX, ylocY + spacingY / 2, spacingX, spacingY);
 		} else if (indicatorCount == 1) {
@@ -178,18 +160,6 @@ class Indicators extends Ui.Drawable {
 			$.writeBatteryLevel(dc, x, y, mBatteryWidth, mBatteryWidth / 2, 0);
 			return;
 		}
-
-//****************************************************************
-//******** REMVOVED THIS SECTION IF TESLA CODE NOT WANTED ********
-//****************************************************************
-		if (indicatorType == 6 /* INDICATOR_TYPE_TESLA */) { // We're reusing the watch batterie indicator to show the Tesla's batterie level
-			$.writeBatteryLevel(dc, x, y, mBatteryWidth, mBatteryWidth / 2, 1); 
-			return;
-		}
-
-//****************************************************************
-//******************** END OF REMVOVED SECTION *******************
-//****************************************************************
 
 		// Show notifications icon if connected and there are notifications, bluetoothicon otherwise.
 		var settings = Sys.getDeviceSettings();

@@ -1,8 +1,8 @@
 <fonts>
-	<font id="HoursFont" filename="titillium-web-bold-74-tall.fnt" antialias="true"/>
-	<font id="MinutesFont" filename="titillium-web-light-74-tall.fnt" antialias="true"/>
+	<font id="HoursFont" filename="titillium-web-bold-93-tall.fnt" antialias="true"/>
+	<font id="MinutesFont" filename="titillium-web-light-93-tall-extended.fnt" antialias="true"/>
 	<font id="SecondsFont" filename="titillium-web-semibold-26.fnt" antialias="true" filter="0123456789AP"/>
-	<font id="DateFont" filename="titillium-web-semibold-26.fnt" antialias="true" filter=" 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZÁÄÅÉÍÖØÚÛČĚŘŚŠŹŽ"/>
+	<font id="DateFont" filename="titillium-web-semibold-26.fnt" antialias="true" filter=" 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZÁÄÅÉÍÖØÚČĚŘŚŠŹŽ"/>
 
 	<!-- Locale-specific manual date font overrides, because fonts cannot automatically be overridden by locale -->
 	<font id="DateFontOverrideZHS" filename="noto-sans-cjk-sc-medium-26.fnt" antialias="true"/>
