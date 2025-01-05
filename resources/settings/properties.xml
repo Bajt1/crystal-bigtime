@@ -1,5 +1,5 @@
 <properties>
-	<property id="AppVersion" type="string">2.20.3</property>
+	<property id="AppVersion" type="string">2.20.4</property>
 
 	<property id="Theme" type="number">8</property>
 	<property id="ThemeOverride" type="string"></property>
@@ -28,7 +28,7 @@
 	<property id="MinutesColourOverride" type="number">0</property>
 	<property id="HideHoursLeadingZero" type="boolean">false</property>
 	<property id="AddColon" type="boolean">true</property>
-	<property id="HideSeconds" type="number">1</property>
+	<property id="HideSeconds" type="number">3</property>
 
 	<property id="LocalTimeInCity" type="string"></property>
 

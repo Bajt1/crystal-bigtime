@@ -16,16 +16,6 @@ class Indicators extends Ui.Drawable {
 	var mIndicator2Type;
 	var mIndicator3Type;
 
-	// private enum /* INDICATOR_TYPES */ {
-	// 	INDICATOR_TYPE_BLUETOOTH,
-	// 	INDICATOR_TYPE_ALARMS,
-	// 	INDICATOR_TYPE_NOTIFICATIONS,
-	// 	INDICATOR_TYPE_BLUETOOTH_OR_NOTIFICATIONS,
-	// 	INDICATOR_TYPE_BATTERY
-	//  INDICATOR_TYPE_BATTERY_NUMERIC
-	// 	INDICATOR_TYPE_TESLA
-	// }
-
 	function initialize(params) {
 		Drawable.initialize(params);
 

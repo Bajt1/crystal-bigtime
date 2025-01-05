@@ -182,7 +182,6 @@
 			<listEntry value="3">@Strings.BluetoothOrNotifications</listEntry>
 			<listEntry value="4">@Strings.Battery</listEntry>
 			<listEntry value="5">@Strings.BatteryNumeric</listEntry>
-			<listEntry value="6">@Strings.Tesla</listEntry>
 			<listEntry value="7">@Strings.DND</listEntry>
 		</settingConfig>
 	</setting>
@@ -195,7 +194,6 @@
 			<listEntry value="3">@Strings.BluetoothOrNotifications</listEntry>
 			<listEntry value="4">@Strings.Battery</listEntry>
 			<listEntry value="5">@Strings.BatteryNumeric</listEntry>
-			<listEntry value="6">@Strings.Tesla</listEntry>
 			<listEntry value="7">@Strings.DND</listEntry>
 		</settingConfig>
 	</setting>
@@ -208,7 +206,6 @@
 			<listEntry value="3">@Strings.BluetoothOrNotifications</listEntry>
 			<listEntry value="4">@Strings.Battery</listEntry>
 			<listEntry value="5">@Strings.BatteryNumeric</listEntry>
-			<listEntry value="6">@Strings.Tesla</listEntry>
 			<listEntry value="7">@Strings.DND</listEntry>
 		</settingConfig>
 	</setting>
