@@ -60,6 +60,10 @@ class MoveBar extends Ui.Drawable {
 				$.updateComplications("", "Complication_MB", 1, Complications.COMPLICATION_TYPE_RECOVERY_TIME);
 				App.getApp().getView().mMoveBarType.put("ComplicationType", Complications.COMPLICATION_TYPE_RECOVERY_TIME);
 			}
+			else if (mMoveBarStyle == 4) {
+				$.updateComplications("", "Complication_MB", 1, Complications.COMPLICATION_TYPE_INTENSITY_MINUTES);
+				App.getApp().getView().mMoveBarType.put("ComplicationType", Complications.COMPLICATION_TYPE_INTENSITY_MINUTES);
+			}
 			else {
 				Storage.deleteValue("Complication_MB1");
 			}
@@ -115,9 +119,17 @@ class MoveBar extends Ui.Drawable {
 			// 4 Move bar : Between 36 and 47 hours
 			// 5 Move bar : 48 and more hours
 		} else if (mMoveBarStyle == 4) {
-			var value = info.activeMinutesWeek.total;
-			value = ( value / info.activeMinutesWeekGoal ) * 5;
-			value = value.toNumber();
+			var value = null;
+			if (Toybox has :Complications && view.useComplications()) {
+				value = moveBarType.get("ComplicationValue");
+			}
+
+			if (value == null) {
+				value = info.activeMinutesWeek.total;
+			}
+
+			value = value * 5;
+			value = value / info.activeMinutesWeekGoal;
 			currentMoveBarLevel = value;
 
 			if (currentMoveBarLevel > 5) {

@@ -1038,7 +1038,7 @@ class CrystalDelegate extends Ui.WatchFaceDelegate {
 		}
 
 		// Check Movebar
-		if ($.getIntProperty("MoveBarStyle", 0) == 2) { // Only matters if we're showing the recovery time
+		if ($.getIntProperty("MoveBarStyle", 0) == 2 || $.getIntProperty("MoveBarStyle", 0) == 4)  { // Only matters if we're showing the recovery time
 			var x = mView.mDrawables[:MoveBar];
 			x = x.mX;
 			y = mView.mDrawables[:MoveBar].mY;
