@@ -1,11 +1,11 @@
 <properties>
-	<property id="AppVersion" type="string">2.20.4</property>
+	<property id="AppVersion" type="string">2.20.5</property>
 
 	<property id="Theme" type="number">8</property>
 	<property id="ThemeOverride" type="string"></property>
 	<property id="ThemeLightOverride" type="boolean">false</property>
 
-	<property id="UseComplications" type="boolean">false</property>
+	<property id="UseComplications" type="boolean">true</property>
 	<property id="ComplicationName" type="string">Flashlight</property>
 
 	<property id="LeftGoalType" type="number">0</property>
@@ -28,7 +28,7 @@
 	<property id="MinutesColourOverride" type="number">0</property>
 	<property id="HideHoursLeadingZero" type="boolean">false</property>
 	<property id="AddColon" type="boolean">true</property>
-	<property id="HideSeconds" type="number">3</property>
+	<property id="HideSeconds" type="number">2</property>
 
 	<property id="LocalTimeInCity" type="string"></property>
 
