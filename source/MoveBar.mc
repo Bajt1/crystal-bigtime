@@ -116,9 +116,13 @@ class MoveBar extends Ui.Drawable {
 			// 5 Move bar : 48 and more hours
 		} else if (mMoveBarStyle == 4) {
 			var value = info.activeMinutesWeek.total;
-			value = value / info.activeMinutesWeekGoal;
+			value = ( value / info.activeMinutesWeekGoal ) * 5;
 			value = value.toNumber();
 			currentMoveBarLevel = value;
+
+			if (currentMoveBarLevel > 5) {
+				currentMoveBarLevel = 5;
+			}
 		}
 		else {
 			currentMoveBarLevel = info.moveBarLevel;

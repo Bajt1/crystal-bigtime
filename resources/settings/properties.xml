@@ -32,5 +32,5 @@
 
 	<property id="LocalTimeInCity" type="string"></property>
 
-	<property id="MoveBarStyle" type="number">0</property>
+	<property id="MoveBarStyle" type="number">4</property>
 </properties>
