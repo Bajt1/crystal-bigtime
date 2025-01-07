@@ -920,7 +920,7 @@ class CrystalDelegate extends Ui.WatchFaceDelegate {
 
 					while (complicationId != null) {
 						//logMessage(complicationId.longLabel.toString());
-						if ((complicationId.getType() == Complications.COMPLICATION_TYPE_INVALID && complicationId.longLabel != null && complicationId.longLabel.equals(defComplicationName))) {
+						if (((complicationId.getType() == Complications.COMPLICATION_TYPE_INVALID || complicationId.getType() == Complications.COMPLICATION_TYPE_NOTIFICATION_COUNT) && complicationId.longLabel != null && complicationId.longLabel.equals(defComplicationName))) {
 							//DEBUG*/ logMessage("Found our flashlight complication");
 							complicationId = complicationId.complicationId;
 							//DEBUG*/ logMessage("complicationId is '" + complicationId + "'");
